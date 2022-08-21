@@ -65,11 +65,9 @@ Step 4. Open your SSH terminal and run the following commands.
 
 Discord
 
-![alt tag](https://github.com/GunGameOG/Discord-VPN-DDoS-Attack-Alerts/blob/master/AlertPrevDiscord.PNG "Discord")
+![alt tag](https://github.com/GunGameOG/Discord-VPN-DDoS-Attack-Notifications/blob/main/attack%20detected.jpg "Attack Detected")
 
-Guilded
-
-![alt tag](https://github.com/GunGameOG/Discord-VPN-DDoS-Attack-Alerts/blob/master/AlertPrevGuilded.PNG "Guilded")
+![alt tag](https://github.com/GunGameOG/Discord-VPN-DDoS-Attack-Notifications/blob/main/attack%20stopped.jpg "Attack Stopped")
 
 # Need help?
 
