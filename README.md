@@ -39,26 +39,26 @@ Step 4. Open your SSH terminal and run the following commands.
 # The results after you enter step 4. commands
 
     root@chivpn1:~# service discord start && service discord status
-● discord.service - Traffic Alert System
+    ● discord.service - Traffic Alert System
      Loaded: loaded (/etc/systemd/system/disord.service; enabled; vendor preset: enabled)
      Active: active (running) since Fri 2022-08-19 20:42:36 CDT; 59min ago
-   Main PID: 149923 (bash)
-      Tasks: 2 (limit: 2304)
-     Memory: 3.5M
-     CGroup: /system.slice/discord.service
+        Main PID: 149923 (bash)
+        Tasks: 2 (limit: 2304)
+        Memory: 3.5M
+        CGroup: /system.slice/discord.service
              ├─149923 /bin/bash discord.sh
              └─150941 sleep 300
 
-Aug 19 21:33:42 chivpn1 bash[149923]: [21B blob data]
-Aug 19 21:33:42 chivpn1 bash[150901]: Running as user "root" and group "root". This could be danger>
-Aug 19 21:33:42 chivpn1 bash[150901]: Capturing on 'eth0'
-Aug 19 21:34:00 chivpn1 bash[150901]: 300 packets captured
-Aug 19 21:34:00 chivpn1 bash[149923]: Fri 19 Aug 2022 09:34:00 PM CDT Detecting Attack Packets.
-Aug 19 21:39:00 chivpn1 bash[149923]:  Attack Detected Monitoring Incoming Traffic
-Aug 19 21:39:00 chivpn1 bash[150939]:   % Total    % Received % Xferd  Average Speed   Time    Time>
-Aug 19 21:39:00 chivpn1 bash[150939]:                                  Dload  Upload   Total   Spen>
-Aug 19 21:39:00 chivpn1 bash[150939]: [158B blob data]
-Aug 19 21:39:00 chivpn1 bash[149923]: Paused for.
+    Aug 19 21:33:42 chivpn1 bash[149923]: [21B blob data]
+    Aug 19 21:33:42 chivpn1 bash[150901]: Running as user "root" and group "root". This could be danger>
+    Aug 19 21:33:42 chivpn1 bash[150901]: Capturing on 'eth0'
+    Aug 19 21:34:00 chivpn1 bash[150901]: 300 packets captured
+    Aug 19 21:34:00 chivpn1 bash[149923]: Fri 19 Aug 2022 09:34:00 PM CDT Detecting Attack Packets.
+    Aug 19 21:39:00 chivpn1 bash[149923]:  Attack Detected Monitoring Incoming Traffic
+    Aug 19 21:39:00 chivpn1 bash[150939]:   % Total    % Received % Xferd  Average Speed   Time    Time>
+    Aug 19 21:39:00 chivpn1 bash[150939]:                                  Dload  Upload   Total   Spen>
+    Aug 19 21:39:00 chivpn1 bash[150939]: [158B blob data]
+    Aug 19 21:39:00 chivpn1 bash[149923]: Paused for.
 
 # Screenshots
 
