@@ -1,6 +1,6 @@
 # Discord-VPN-DDoS-Attack-Notifications
   
-  Discord-VPN-DDoS-Attack-Alerts V2
+Discord-VPN-DDoS-Attack-Alerts V2
 
 [D]DoS Notifications sent to your Discord Server from your Dedicated Server, VPS or Discord Bot.
 
@@ -8,15 +8,15 @@ This script sends a notification to discord using a webhook when a DDos attack i
 
 # How to start using script
 
-Step 1. Head over to Discord and create a new webhook in a server and channel of your choice.
+Step 1. Head over to Discord App and create a new webhook in a server channel of your choice.
 
-Step 2. Download the discordalerts.sh and discord.service. You can edit any lines in discordalerts.sh such as the Alert message, Location or host to your liking then save your changes.
+Step 2. Download the detected.sh and detected.service. You can edit any lines in detected.sh such as the Alert message, Location or host to your liking then save your changes.
 
-Step 3. Use an FTP client to place discordalerts.sh into /root and place discord.service into /etc/systemd/system.
+Step 3. Use an FTP client to place detected.sh into /root and place detected.service into /etc/systemd/system.
 
-   Move discord.service to Systemd run 
+   Move detected.service to Systemd run 
       
-      mv /root/discord.service /etc/systemd/system/discord.service
+      mv /root/detected.service /etc/systemd/system/detected.service
  
    Create a "dumps" folder for PCAPS run 
       
@@ -30,23 +30,23 @@ Step 4. Open your SSH terminal and run the following commands.
   
     systemctl daemon-reload
   
-    systemctl start discord
+    systemctl start detected
   
-    systemctl enable discord
+    systemctl enable detected
 
-    service discord start && service discord status
+    service detected start && service detected status
   
 # The results after you enter step 4. commands
 
-    root@chivpn1:~# service discord start && service discord status
-    ● discord.service - Traffic Alert System
-     Loaded: loaded (/etc/systemd/system/disord.service; enabled; vendor preset: enabled)
+    root@chivpn1:~# service detected start && service detected status
+    ● detected.service - Traffic Alert System
+     Loaded: loaded (/etc/systemd/system/detected.service; enabled; vendor preset: enabled)
      Active: active (running) since Fri 2022-08-19 20:42:36 CDT; 59min ago
         Main PID: 149923 (bash)
         Tasks: 2 (limit: 2304)
         Memory: 3.5M
-        CGroup: /system.slice/discord.service
-             ├─149923 /bin/bash discord.sh
+        CGroup: /system.slice/detected.service
+             ├─149923 /bin/bash detected.sh
              └─150941 sleep 300
 
     Aug 19 21:33:42 chivpn1 bash[149923]: [21B blob data]
