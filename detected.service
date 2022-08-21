@@ -1,0 +1,15 @@
+[Unit]
+Description=Traffic Alert System
+After=network.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/root
+ExecStart=/bin/bash detected.sh
+Restart=always
+RestartSec=300
+
+[Install]
+WantedBy=multi-user.target
