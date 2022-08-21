@@ -27,15 +27,15 @@ Use an FTP client to place detected.sh into /root and place detected.service int
 
 Step 4. Open your SSH terminal and run the following commands. 
 
-    apt-get update && sudo apt-get upgrade -y
+     apt-get update && sudo apt-get upgrade -y
   
-    systemctl daemon-reload
+     systemctl daemon-reload
   
-    systemctl start detected
+     systemctl start detected
   
-    systemctl enable detected
+     systemctl enable detected
 
-    service detected start && service detected status
+     service detected start && service detected status
   
 # The results after you enter step 4. commands
 
