@@ -50,7 +50,7 @@ while /bin/true; do
       },
       {
         "name": "**Incoming bandwith**",
-        "value": "'$new_b' Megabytes Per Second",
+        "value": "'$new_bs' Megabytes Per Second",
         "inline": false
       },
       {
@@ -109,12 +109,12 @@ while /bin/true; do
       },
       {
         "name": "**Packets per second during the attack**",
-        "value": "'$pps' packets per second",
+        "value": "'$old_ps' packets per second",
         "inline": false
       },
       {
         "name": "**Megabytes per second during the attack**",
-        "value": "'$old_b' Mbps",
+        "value": "'$old_bs' Mbps",
         "inline": false
       }
     ]
