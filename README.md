@@ -1,18 +1,19 @@
 # Discord-VPN-DDoS-Attack-Notifications
-  
-Discord-VPN-DDoS-Attack-Alerts V2
-
 [D]DoS Notifications sent to your Discord Server from your Dedicated Server, VPS or Discord Bot.
 
+# What the script does
 This script sends a notification to discord using a webhook when a DDos attack is detected on your Dedicated Server or VPS server. It was written in Shell Script so it will work with linux execution environments.
 
-# How to start using script
+# Installing the script
 
-Step 1. Head over to Discord App and create a new webhook in a server channel of your choice.
+# Step 1
+Head over to Discord App and create a new webhook in a server channel of your choice.
 
-Step 2. Download the detected.sh and detected.service. You can edit any lines in detected.sh such as the Alert message, Location or host to your liking then save your changes.
+# Step 2
+Download the detected.sh and detected.service. You can edit any lines in detected.sh such as the Alert message, Location or host to your liking then save your changes.
 
-Step 3. Use an FTP client to place detected.sh into /root and place detected.service into /etc/systemd/system.
+# Step 3
+Use an FTP client to place detected.sh into /root and place detected.service into /etc/systemd/system.
 
    Move detected.service to Systemd run 
       
